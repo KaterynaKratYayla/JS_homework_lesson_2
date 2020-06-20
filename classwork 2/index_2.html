@@ -1,0 +1,29 @@
+<html>
+<script>
+
+/*
+Task 2:
+            Перепишите if..else с использованием нескольких операторов '?'.
+            Для читаемости рекомендуется разбить код на несколько строк.
+            let message;
+            if (login == 'Сотрудник') {
+                message = 'Привет';
+            } else if (login == 'Директор') {
+                message = 'Здравствуйте';
+            } else if (login == '') {
+                message = 'Нет логина';
+            } else {
+                message = '';
+			
+*/
+
+var login=prompt('Enter your position');
+	
+var message;
+
+message=(login=='Сотрудник')?'Привет':message=(login=='Директор')?'Здравствуйте':
+message=(login=='')?'No login':message=('');
+document.write(message)
+
+</script>
+</html>

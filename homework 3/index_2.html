@@ -1,0 +1,17 @@
+<html>
+    <script>
+  //2. Создать программу, выполняющую вставку элемента в массив 
+  //после элемента, значение которого укажет пользователь.
+  
+var myArray=['Orange','Apple','Grapes','Melon'];
+var listName=prompt('Enter fruite name from the list : Orange,Apple,Grapes,Melon');
+for(i=0;i<myArray.length;i++)
+{
+if(listName==myArray[i])
+{
+myArray.splice((i+1),0,(prompt('Add elements to the list')))
+}console.log(myArray[i])
+}
+
+</script>
+</html>

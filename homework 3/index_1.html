@@ -1,0 +1,38 @@
+<html>
+    <script>
+
+//    1. Сделать собственные примеры методов применяемых для массивов.
+//1) .reverse
+
+var myArray=[1,2,3,4]
+myArray.reverse()
+console.log(myArray)
+
+//2. .split
+
+var names='John,Mike,Jake';
+var myArray=names.split(',');
+console.log(myArray)
+
+//3. join
+var myArray=['Kate','loves','chocolate'];
+var string=myArray.join('_');
+console.log(string)
+
+//4. splice
+var myArray=['My','cat','is','not','kind'];
+myArray.splice(3,1);
+alert(myArray);
+
+//5. unshift
+var myArray=[['John','Smith'],
+             ['Mike','Cattle'],
+			 ['Sergey','Ivanov']];
+			 
+for(i=0;i<myArray.length;i++)
+{
+console.log(myArray[i].unshift('Mr'))
+}console.log(myArray)
+
+</script>
+</html>

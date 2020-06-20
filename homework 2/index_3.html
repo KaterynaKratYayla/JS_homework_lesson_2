@@ -1,0 +1,23 @@
+<html>
+    <script>
+
+        //   3. Определить какое из трех, введенных пользователем, чисел максимальное и вывести его на экран.
+
+        a=+prompt('Enter first digit');
+        b=+prompt('Enter second digit');
+        c=+prompt('Enter third digit');
+        var max;
+
+        if(a<b&&c<b){
+        max=b;
+		}
+        else if(b<a&&c<a){
+        max=a;
+		}
+        else {
+        max=c;
+        }
+        document.write('maximum digit is '+max)
+
+        </script>
+        </html>
