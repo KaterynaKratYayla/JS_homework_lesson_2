@@ -1,0 +1,20 @@
+<html>
+    <script>
+
+/*
+ 2. Напишите функцию подсчета градусов Фаренгейта при входящем параметре температуры в цельсиях.
+Алгоритм пересчета из градусов Цельсия в градусы Фаренгейта - это температура в градусах Цельсия, умноженная на 9/5 плюс 32.         
+*/
+
+function calcTemp(a){
+var F=a*9/5+32;
+return F;
+}
+
+var T=prompt('Enter temperature in Celcius to be changed into Fahrenheits')
+var Fh=calcTemp(T);
+alert(T+' Celcius equals to '+Fh+' Fahrenheits')
+
+
+        </script>
+        </html>

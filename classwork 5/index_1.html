@@ -1,0 +1,23 @@
+<html>
+    <script>
+
+/*
+1. Обрезать строку (первый аргумент), если она длиннее заданной максимальной длины строки (второй аргумент). Вернуть усеченную строку 
+		с ... окончанием.
+        function truncateString(str, num) {
+        // Clear out that junk in your trunk
+        return str;
+        }
+        truncateString("A-tisket a-tasket A green and yellow basket", 8);
+*/
+
+
+function truncateString(str, num) {
+var Newstr=str.split('').slice(0,num).join('')
+return (Newstr+'...')
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+
+</script>
+</html>

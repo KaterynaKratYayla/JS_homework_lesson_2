@@ -1,0 +1,24 @@
+<html>
+    <script>
+/*3.  Создать игру "Камень-Ножницы-Бумага".
+        Выбор компьютера определяется строкой:  
+        "var computerChoice = Math.random();
+        alert(computerChoice);".
+        Math.random() выдает произвольное число в промежутке от 0 до 1, на основании этого можно построить принцип выбора решения компьютера.
+*/
+
+
+function gameRandom(max) {
+  var computerChoice=Math.floor(Math.random() * Math.floor(max));
+  var result;
+  if(computerChoice==0) result='Камень'
+else if(computerChoice==1) result='Ножницы'
+else result='Бумага'
+return result  
+}
+
+var game=gameRandom(3)
+alert(game);
+
+</script>
+</html>

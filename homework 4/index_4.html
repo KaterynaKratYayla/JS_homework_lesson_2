@@ -1,0 +1,26 @@
+<html>
+    <script>
+
+//4. Напишите функцию, которая возвращает n-е число Фибоначчи. Для решения используйте цикл.
+
+function Fibonaci(position)
+{
+var arr=[0,1]
+arr.length=position
+for(i=2;i<=position;i++)
+{
+arr[i]=arr[i-1]+arr[i-2]
+if(i==position)
+{
+    var count=arr[position-1]
+}
+}//console.log(arr)
+return count;
+}
+
+var n=+prompt('Enter POSITIVE position number in Fibonaci sequence')
+var result=Fibonaci(n)
+console.log(result)
+
+        </script>
+        </html>

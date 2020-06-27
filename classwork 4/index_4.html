@@ -1,0 +1,28 @@
+<html>
+    <script>
+
+/*
+4. Напишите функцию которая возвращает длину самого длинного слова в предложении. 
+Ваш ответ должен быть числом.
+"The quick brown fox jumped over the lazy dog"
+*/
+
+function countLength(line){
+var newArray=line.split(' ');
+var max=0;
+for(i=0;i<=newArray[i].length;i++)
+{
+if(newArray[i].length>max){	
+max=newArray[i].length
+}
+}
+return max
+}
+
+var str='The quick brown fox jumped over the lazy dog';
+var lwrd=countLength(str);
+alert('The longest word of has '+lwrd+' letters');
+
+
+        </script>
+        </html>

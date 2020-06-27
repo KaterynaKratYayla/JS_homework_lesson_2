@@ -1,0 +1,25 @@
+<html>
+    <script>
+
+/*      2. Создайте функцию, которая просматривает массив (первый аргумент) и возвращает первый элемент в массиве, который проходит проверку на 
+истинность (второй аргумент). Если ни один элемент не проходит тест, вернуть undefined.
+*/      
+
+function findElement(arr, func) {
+       
+var test=0;
+for(i=0;i<arr.length;i++){
+test=arr[i]
+if(func(test))
+return test
+}
+return num='undefined';
+}
+       
+var element=findElement([1, 2, 3, 4], function(num) {return num % 2 === 0} );
+console.log(element)
+
+
+
+        </script>
+        </html>

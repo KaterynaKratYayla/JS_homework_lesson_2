@@ -1,0 +1,24 @@
+<html>
+    <script>
+
+//    2. Создать функцию, возводящую число в степень, число и сама степень вводится пользователем
+
+function MathExp(base,exp)
+{
+var result
+if(exp==0) {
+result=1;
+}
+else 
+result=base*MathExp(base,exp-1);
+return result
+}
+
+var a=+prompt('Enter your digit');
+var b=+prompt('Enter your exponent value');
+var calc=MathExp(a,b);
+alert('Your exponentiation result is '+calc);
+
+
+        </script>
+        </html>

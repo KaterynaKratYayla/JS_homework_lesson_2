@@ -1,0 +1,27 @@
+<html>
+<script>
+    
+/*
+1. Создать объект Point, содержащий два свойства: "x" и "y" — координаты точки, и метод GetQuadrant, вычисляющий, в каком квадранте в декартовой 
+системе координат находится данная точка. Протестируйте данный объект, изменяя значения его координат, и повторно вызавая метод GetQuadrant.
+*/
+
+var Point = {x:2,
+             y:3,
+            GetQuadrant(){
+           var resut;
+           if(this.x>0&&this.y>0) {result='First';}
+           else if(this.x<0&&this.y>0) {result='Second';}
+           else if(this.x<0&&this.y<0) {result='Third';}
+           else {result='Fourth';}
+           console.log(result+' quarter of Cartesian coordinate system');
+                      }
+            }
+
+//console.log(Point);
+Point.GetQuadrant();
+
+
+
+</script>
+</html>
