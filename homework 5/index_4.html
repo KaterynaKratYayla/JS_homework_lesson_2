@@ -1,0 +1,63 @@
+<html>
+    <script>
+
+        /*    4. Для предыдущего задания создайте функцию, которая будет принимать в себя массив объектов-сотрудников, и каждому из объектов
+       будет добавлять новое свойство "salary", хранящее зарплату сотрудника. 
+       Зарплата расчитывается, исходя из значения свойства "occupation" следующим образом:
+           • "director" — 3000;
+           • "manager" — 1500;
+           • "programmer" — 2000;
+           • для остальных значений — 1000.
+       После выполнения функции — вывести информацию о сотрудниках.
+*/
+//СКОПИРОВАНО С ПРЕДЫДУЩЕГО ЗАДАНИЯ. САМ ОТВЕТ СМ. НИЖЕ
+var Employees=[{Name:' ',
+               sName:' ',
+               age:' ',
+               occupation:' ',
+               show(){
+               for(var key in this){
+               if(key!='show')
+               document.write(key+':'+this[key]+' ,')}
+               }},
+               {Name:' ',
+               sName:' ',
+               age:' ',
+               occupation:' ',
+               show(){
+               for(var key in this){
+               if(key!='show')
+               document.write(key+':'+this[key]+' ,')}
+               }}]
+
+
+for(i=0;i<Employees.length;i++){
+Employees[i].Name=prompt('Enter your name');
+Employees[i].sName=prompt('Enter your sName');
+Employees[i].age=prompt('Enter your age');
+Employees[i].occupation=prompt('Enter your occupation');
+}console.log(Employees)
+
+//НИЖЕ САМ ОТВЕТ НА ЗАДАНИЕ
+
+for(i=0;i<Employees.length;i++)
+{
+Employees[i].salary=' ';
+switch(Employees[i].occupation)
+{
+case 'director':Employees[i].salary=3000;break;
+case 'manager':Employees[i].salary=1500;break;
+case 'programmer':Employees[i].salary=2000;break;
+default:Employees[i].salary=1000;break;
+}
+}
+
+for(i=0;i<Employees.length;i++)
+{
+Employees[i].show()
+document.write('<br>')
+}
+
+
+        </script>
+        </html>

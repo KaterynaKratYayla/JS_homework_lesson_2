@@ -1,0 +1,43 @@
+<html>
+    <script>
+
+/*3. Создать массив, который будет хранить в себе информацию о сотрудниках предприятия. Каждый элемент масива — объект,
+       содержащий свойства: name, sName, age, occupation, и метод show, который выводит всю информацию о пользователе.
+       Реализовать заполнение массива пользователем. По окончанию заполнения — вывести информацию о сотрудниках.
+*/
+
+var Employees=[{Name:' ',
+               sName:' ',
+               age:' ',
+               occupation:' ',
+               show(){
+               for(var key in this){
+               if(key!='show')
+               document.write(key+':'+this[key]+' ,')}
+               }},
+               {Name:' ',
+               sName:' ',
+               age:' ',
+               occupation:' ',
+               show(){
+               for(var key in this){
+               if(key!='show')
+               document.write(key+':'+this[key]+' ,')}
+               }}]
+
+
+for(i=0;i<Employees.length;i++){
+Employees[i].Name=prompt('Enter your name');
+Employees[i].sName=prompt('Enter your sName');
+Employees[i].age=prompt('Enter your age');
+Employees[i].occupation=prompt('Enter your occupation');
+}console.log(Employees)
+
+for(i=0;i<Employees.length;i++)
+{
+Employees[i].show()
+document.write('<br>')
+}
+
+</script>
+</html>
