@@ -1,0 +1,44 @@
+<html>
+    <script>
+
+  /*     2. Завершите написание функции getArrayOfUsers, чтобы она 
+возвращала массив, содержащий все свойства объекта, который он получает 
+в качестве аргумента.
+   */    
+   var users = {
+            Alan: {
+                age: 27,
+                online: false
+            },
+            Jeff: {
+                age: 32,
+                online: true
+            },
+            Sarah: {
+                age: 48,
+                online: false
+            },
+            Ryan: {
+                age: 19,
+                online: true
+
+            }
+        };
+
+//если нужно именно сделать массив по ключам
+ function getArrayOfUsers(obj) {
+return Object.keys(obj)
+}
+
+console.log(getArrayOfUsers(users));
+
+//если нужно сделать массив по свойствам ключей
+ function getArrayOfUsers1(obj) {
+return Object.values(obj)
+}
+
+console.log(getArrayOfUsers1(users));
+
+
+        </script>
+        </html>

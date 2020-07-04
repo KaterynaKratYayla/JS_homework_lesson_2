@@ -1,0 +1,22 @@
+<html>
+    <script>
+
+
+/*4. Используйте метод some внутри функции checkPositive, чтобы проверить, является ли какой-либо элемент в arr положительным. Функция должна 
+возвращать логическое значение.
+*/
+
+function checkPositive(arr) {
+return arr.some(function(value){
+if(value>0)
+return value; 
+});
+}
+
+alert(checkPositive([1,2,-3,4,-5]));
+
+
+
+
+        </script>
+        </html>
